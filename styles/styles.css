@@ -1,20 +1,28 @@
 html,
-body {
-    font-family: "mencken-std-text", sans-serif;
-    font-weight: 400;
+body,
+p,
+.body-text {
+    font-family: "new-order", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
 
 
 /* normal headings? */
-h1, h2, h3, h4 {
-    font-family: "new-order", sans-serif;
-    font-weight: 500;
+h1, 
+h2, 
+h3, 
+h4,
+.main-title {
+    font-family: "mencken-std-head", sans-serif;
+    font-weight: 800;
     font-style: normal;
 }
 
-h5, h6 {
+h5, 
+h6,
+.sub-title {
     font-family: "mencken-std-head", sans-serif;
     font-weight: 500;
     font-style: normal;
