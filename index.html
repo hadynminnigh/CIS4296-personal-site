@@ -8,6 +8,14 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+<!-- TO DO: ----------------------------------------------------------------------------------------------------------
+    ● Add at least 1 completely new section or page
+    ● Add your own font
+    ● Personalize it! Add your name and some fun things about yourself
+    ● Try out at least 2 Bootstrap components other than what is on the template
+    ● Use the utility classes as much as possible 
+---------------------------------------------------------------------------------------------------------------------->
+
     <!-- Bootstrap  -->
 
     <link
@@ -25,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
+    <!-- <script>
       fetch('https://randomuser.me/api/?inc=name,picture')
         .then((response) => response.json())
         .then(({ results }) => results[0])
@@ -37,13 +45,13 @@
           document.title = `${name.first} ${name.last} Personal Site`
           document.querySelector('#profilepic').src = picture.large
         })
-    </script>
+    </script> -->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Hadyn Minnigh</title>
   </head>
 
   <body>
@@ -93,8 +101,9 @@
       <div
         class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
       >
-      <!-- Set Photo Here -->
+<!------ PHOTO ------>
         <img
+          src="#"
           style="height: 150px; width: 150px"
           class="rounded-circle"
           draggable="false"
@@ -102,94 +111,113 @@
         />
       </div>
       <div class="row mx-auto">
+<!------ NAME ------>
         <h4 class="h1 font-weight-bold mx-auto text-center">
-          <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          Hi! I'm Hadyn Minnigh!
         </h4>
       </div>
       <div class="row mx-auto">
+<!------ MAJOR ------>
         <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
           Information Science & Technology Student at Temple University
         </h5>
       </div>
+      
+<!-- LANGUAGES ---------------->
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
+<!------ HTML ------>
         <div class="col text-center">
           <img
-            src="images/python.jpg"
+            src="images/html-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Python"
+            title="HTML"
           />
         </div>
+<!------ CSS ------>
         <div class="col text-center">
           <img
-            src="images/angular.jpg"
+            src="images/css-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Angular"
+            title="CSS"
           />
         </div>
+<!------ JAVASCRIPT ------>
         <div class="col text-center">
           <img
-            src="images/typescript.jpg"
+            src="images/java-script.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="TypeScript"
+            title="JavaScript"
           />
         </div>
-
+<!------ REACT ------>
         <div class="col text-center">
           <img
-            src="images/csharp.jpg"
+            src="images/react-bw.png"
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="React"
+          />
+        </div>
+<!------ C# ------>
+        <div class="col text-center">
+          <img
+            src="images/csharp-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="C#"
           />
         </div>
+<!------ JAVA ------>
         <div class="col text-center">
           <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/java.jpg"
+            src="images/java-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="Java"
           />
         </div>
-
+<!------ PYTHON ------>
         <div class="col text-center">
           <img
-            src="images/aspnet.jpg"
+            src="images/python-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="ASP.NET"
+            title="Python"
           />
         </div>
+<!------ PHOTOSHOP ------>
         <div class="col text-center">
           <img
-            src="images/mssql.jpg"
+            src="images/photoshop-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Microsoft SQL Server"
+            title="Adobe Photoshop"
           />
         </div>
+<!------ ILLUSTRATOR ------>
         <div class="col text-center">
           <img
-            src="images/mongodb.jpg"
+            src="images/illustrator-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="MongoDB"
+            title="Adobe Illustrator"
           />
         </div>
+<!------ FIGMA ------>
+<div class="col text-center">
+  <img
+    src="images/figma-bw.png"
+    data-bs-toggle="tooltip"
+    data-placement="top"
+    title="Figma"
+  />
+</div>
       </div>
 
+<!-- PROJECTS ---------------->
       <div class="row mt-3 mt-lg-5 next">
         <a href="#projects" class="col"
           ><iconify-icon
