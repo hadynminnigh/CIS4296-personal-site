@@ -4,13 +4,13 @@ body {
 }
 
 /* might change some of this */
-h1, h2 { 
+h1, h2, h3, h4 { 
     font-family: "p22-sting", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-h3, h4, h5, h6 {
+h5, h6 {
     font-family: "mencken-std-head", sans-serif;
     font-weight: 500;
     font-style: normal;
