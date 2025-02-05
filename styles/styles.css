@@ -3,10 +3,12 @@ body {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* might change some of this */
-h1, h2, h3, h4 { 
-    font-family: "p22-sting", sans-serif;
-    font-weight: 700;
+
+
+/* normal headings? */
+h1, h2, h3, h4 {
+    font-family: "new-order", sans-serif;
+    font-weight: 500;
     font-style: normal;
 }
 
