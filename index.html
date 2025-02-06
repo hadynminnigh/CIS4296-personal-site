@@ -8,6 +8,14 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+<!-- TO DO: ----------------------------------------------------------------------------------------------------------
+    ● Add at least 1 completely new section or page
+    ● Add your own font
+    ● Personalize it! Add your name and some fun things about yourself
+    ● Try out at least 2 Bootstrap components other than what is on the template
+    ● Use the utility classes as much as possible 
+---------------------------------------------------------------------------------------------------------------------->
+
     <!-- Bootstrap  -->
 
     <link
@@ -25,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
+    <!-- <script>
       fetch('https://randomuser.me/api/?inc=name,picture')
         .then((response) => response.json())
         .then(({ results }) => results[0])
@@ -37,13 +45,16 @@
           document.title = `${name.first} ${name.last} Personal Site`
           document.querySelector('#profilepic').src = picture.large
         })
-    </script>
+    </script> -->
+
+    <!-- font pack -->
+    <link rel="stylesheet" href="https://use.typekit.net/ejl6yqc.css">
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Hadyn Minnigh</title>
   </head>
 
   <body>
@@ -65,20 +76,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link link-text" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#projects"
+              <a class="nav-link link-text" aria-current="page" href="#projects"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#courses"
+              <a class="nav-link link-text" aria-current="page" href="#courses"
                 >Courses</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact"
+              <a class="nav-link link-text" aria-current="page" href="#contact"
                 >Contact</a
               >
             </li>
@@ -93,8 +104,9 @@
       <div
         class="rounded-circle border border-3 border-primary p-1 mb-3 mt-0 mt-lg-5"
       >
-      <!-- Set Photo Here -->
+<!------ PHOTO ------>
         <img
+          src="#"
           style="height: 150px; width: 150px"
           class="rounded-circle"
           draggable="false"
@@ -102,94 +114,114 @@
         />
       </div>
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
-          <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+<!------ NAME ------>
+        <h4 class="main-title h1 font-weight-bold mx-auto text-center">
+          Hi! I'm 
+          <div class="name">Hadyn Minnigh!</div>
         </h4>
       </div>
       <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-center text-opacity-75 text-primary">
+<!------ MAJOR ------>
+        <h5 class="sub-title h5 mx-auto text-center text-opacity-75 text-primary">
           Information Science & Technology Student at Temple University
         </h5>
       </div>
+      
+<!-- LANGUAGES ---------------->
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
+<!------ HTML ------>
         <div class="col text-center">
           <img
-            src="images/python.jpg"
+            src="images/html-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Python"
+            title="HTML"
           />
         </div>
+<!------ CSS ------>
         <div class="col text-center">
           <img
-            src="images/angular.jpg"
+            src="images/css-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Angular"
+            title="CSS"
           />
         </div>
+<!------ JAVASCRIPT ------>
         <div class="col text-center">
           <img
-            src="images/typescript.jpg"
+            src="images/java-script.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="TypeScript"
+            title="JavaScript"
           />
         </div>
-
+<!------ REACT ------>
         <div class="col text-center">
           <img
-            src="images/csharp.jpg"
+            src="images/react-bw.png"
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="React"
+          />
+        </div>
+<!------ C# ------>
+        <div class="col text-center">
+          <img
+            src="images/csharp-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="C#"
           />
         </div>
+<!------ JAVA ------>
         <div class="col text-center">
           <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/java.jpg"
+            src="images/java-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
             title="Java"
           />
         </div>
-
+<!------ PYTHON ------>
         <div class="col text-center">
           <img
-            src="images/aspnet.jpg"
+            src="images/python-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="ASP.NET"
+            title="Python"
           />
         </div>
+<!------ PHOTOSHOP ------>
         <div class="col text-center">
           <img
-            src="images/mssql.jpg"
+            src="images/photoshop-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="Microsoft SQL Server"
+            title="Adobe Photoshop"
           />
         </div>
+<!------ ILLUSTRATOR ------>
         <div class="col text-center">
           <img
-            src="images/mongodb.jpg"
+            src="images/illustrator-bw.png"
             data-bs-toggle="tooltip"
             data-placement="top"
-            title="MongoDB"
+            title="Adobe Illustrator"
           />
         </div>
+<!------ FIGMA ------>
+<div class="col text-center">
+  <img
+    src="images/figma-bw.png"
+    data-bs-toggle="tooltip"
+    data-placement="top"
+    title="Figma"
+  />
+</div>
       </div>
 
+<!-- PROJECTS ---------------->
       <div class="row mt-3 mt-lg-5 next">
         <a href="#projects" class="col"
           ><iconify-icon
@@ -204,18 +236,18 @@
       id="projects"
     >
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Projects</h4>
+        <h4 class="main-title h1 font-weight-bold mx-auto text-center">Projects</h4>
       </div>
       <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+        <h5 class="sub-title h5 mx-auto text-opacity-75 text-primary text-center mb-4">
           I've worked on some neat things.
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5 class="main-title">Inspiro for Esperanza</h5>
       </div>
       <div class="row w-100 mb-4">
-        <p class="text-justify">
+        <p class="text-justify body-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
           nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
           quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
@@ -226,10 +258,10 @@
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5 class="main-title">Work From Home Pinterest</h5>
       </div>
       <div class="row w-100 mb-4">
-        <p class="text-justify">
+        <p class="body-text text-justify">
           Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
           ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
           Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
@@ -239,10 +271,10 @@
         </p>
       </div>
       <div class="row w-100">
-        <h5>Query Dating Site</h5>
+        <h5 class="main-title">Query Dating Site</h5>
       </div>
       <div class="row w-100">
-        <p class="text-justify">
+        <p class="body-text text-justify">
           Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
           odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
           nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
@@ -267,10 +299,10 @@
       id="courses"
     >
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">Courses</h4>
+        <h4 class="main-title h1 font-weight-bold mx-auto text-center">Courses</h4>
       </div>
       <div class="row mx-auto mb-4">
-        <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
+        <h5 class="sub-title h5 mx-auto text-center text-primary text-opacity-75">
           Not as tasty as a main course, but close.
         </h5>
       </div>
@@ -281,7 +313,7 @@
           href="https://bulletin.temple.edu/search/?P=CIS%204296"
           target="_blank"
         >
-          <h5 class="m-0">Information Systems Analysis and Design</h5>
+          <h5 class="m-0 body-text">Information Systems Analysis and Design</h5>
         </a>
         <a
           class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
@@ -289,7 +321,7 @@
           href="https://bulletin.temple.edu/search/?P=CIS%203342"
           target="_blank"
         >
-          <h5 class="m-0">Server-Side Web Application Development</h5>
+          <h5 class="m-0 body-text">Server-Side Web Application Development</h5>
         </a>
         <a
           class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
@@ -297,7 +329,7 @@
           href="https://bulletin.temple.edu/search/?P=CIS%203329"
           target="_blank"
         >
-          <h5 class="m-0">Network Architectures</h5>
+          <h5 class="m-0 body-text">Network Architectures</h5>
         </a>
         <a
           class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
@@ -305,7 +337,7 @@
           href="https://bulletin.temple.edu/search/?P=CIS%203344"
           target="_blank"
         >
-          <h5 class="m-0">Client-Side Scripting</h5>
+          <h5 class="m-0 body-text">Client-Side Scripting</h5>
         </a>
         <a
           class="col-11 col-lg-5 text-center course class-card p-4 rounded text-decoration-none d-flex justify-content-center align-items-center"
@@ -321,7 +353,7 @@
           href="https://bulletin.temple.edu/search/?P=CIS%202109"
           target="_blank"
         >
-          <h5 class="m-0">Database Management Systems</h5>
+          <h5 class="m-0 body-text">Database Management Systems</h5>
         </a>
         <div class="row mt-5 next justify-content-center align-items-center">
           <a href="#contact" class="text-center"
@@ -338,12 +370,12 @@
       id="contact"
     >
       <div class="row mx-auto">
-        <h4 class="h1 font-weight-bold mx-auto text-center">
+        <h4 class="main-title h1 font-weight-bold mx-auto text-center">
           Feel Like Reaching Out?
         </h4>
       </div>
       <div class="row mx-auto">
-        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
+        <h5 class="sub-title h5 mx-auto text-opacity-75 text-primary text-center">
           I don't bite.
         </h5>
       </div>

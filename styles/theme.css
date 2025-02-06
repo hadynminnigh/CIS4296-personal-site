@@ -46,6 +46,14 @@
     --bs-nav-link-hover-color: white;
 }
 
+/* name font */
+.name { 
+    font-family: "p22-sting", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 150%;
+}
+
 /* .btn-primary {
     background-color: var(--temple-red) !important;
     border-color: var(--temple-red) !important;
